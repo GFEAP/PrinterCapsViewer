@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>PrinterCapsViewer</name>
+  </assembly>
+  <members>
+    <member name="T:PrinterCapsViewer.ApplicationMain.MainViewModel">
+      <summary> ViewModel für das Hauptfenster der Anwendung. Verwaltet die Liste der verfügbaren Druckwarteschlangen, lädt und zeigt die Druckerfähigkeiten (Print Capabilities) des ausgewählten Druckers an, ermöglicht das Filtern des Fähigkeitenbaums und stellt das zugehörige Print-Ticket sowohl als hervorgehobenes <see cref="T:System.Windows.Documents.FlowDocument" /> als auch als bereinigtes XML dar. </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.ApplicationMain.MainViewModel.#ctor">
+      <summary>
+   Initialisiert eine neue Instanz von <see cref="T:PrinterCapsViewer.ApplicationMain.MainViewModel" />.
+   Ermittelt den lokalen Druckserver, füllt die Liste der verfügbaren
+   <see cref="T:System.Printing.PrintQueue" />-Objekte und registriert den Handler für
+   Eigenschaftsänderungen.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.IsExpanded">
+      <summary>
+   Gibt an, ob der Fähigkeitenbaum standardmäßig aufgeklappt angezeigt wird.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.PrintQueues">
+      <summary>
+   Liste der auf dem lokalen Druckserver verfügbaren Druckwarteschlangen.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.Root">
+      <summary>
+   Der Wurzelknoten des Baums der Druckerfähigkeiten (Print Capabilities) des
+   aktuell ausgewählten Druckers.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPrintQueue">
+      <summary>
+   Die aktuell im UI ausgewählte Druckwarteschlange.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.ActiveOptions">
+      <summary>
+   Menge der Namen der Optionen, die im aktuellen Print-Ticket aktiv gesetzt sind.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.FilterText">
+      <summary>
+   Der vom Benutzer eingegebene Text zum Filtern des Fähigkeitenbaums.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedNode">
+      <summary>
+   Der aktuell im Fähigkeitenbaum ausgewählte Knoten.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.TicketFlowDocument">
+      <summary>
+   Das <see cref="T:System.Windows.Documents.FlowDocument" />, das den Inhalt des Print-Tickets mit
+   hervorgehobenen aktiven Optionen zur Anzeige bereitstellt.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedValue">
+      <summary>
+   Der Wert des aktuell ausgewählten Knotens als Zeichenkette, oder "&lt;null&gt;",
+   falls kein Knoten ausgewählt ist bzw. dieser keinen Wert besitzt.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.TicketXml">
+      <summary>
+   Das bereinigte XML des aktuellen Print-Tickets als reiner Text.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPosition">
+      <summary>
+   Die Position im <see cref="P:PrinterCapsViewer.ApplicationMain.MainViewModel.TicketFlowDocument" />, die dem aktuell ausgewählten
+   Knoten des Fähigkeitenbaums entspricht, verwendet zum Scrollen/Hervorheben im XML.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.ApplicationMain.MainViewModel.SetCloseWindowsAction(Action)">
+      <summary>
+   Registriert die Aktion, die zum Schließen des Fensters aufgerufen werden soll.
+   </summary>
+      <param name="closeAction">Die auszuführende Schließen-Aktion.</param>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper">
+      <summary>
+   Provides an attached property that enables data binding of a <see cref="T:System.Windows.Documents.FlowDocument" />
+   to a <see cref="T:System.Windows.Controls.RichTextBox" /> control, which does not natively support binding its
+   <see cref="P:System.Windows.Controls.RichTextBox.Document" /> property.
+   </summary>
+    </member>
+    <member name="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.BindableDocumentProperty">
+      <summary>
+   Identifies the BindableDocument attached dependency property, which allows a
+   <see cref="T:System.Windows.Documents.FlowDocument" /> to be bound to a <see cref="T:System.Windows.Controls.RichTextBox" />.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.GetBindableDocument(DependencyObject)">
+      <summary>
+   Gets the value of the BindableDocument attached property for the specified object.
+   </summary>
+      <param name="obj">The dependency object from which to read the property value.</param>
+      <returns>The <see cref="T:System.Windows.Documents.FlowDocument" /> currently assigned to the object.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.SetBindableDocument(DependencyObject,FlowDocument)">
+      <summary>
+   Sets the value of the BindableDocument attached property for the specified object.
+   </summary>
+      <param name="obj">The dependency object on which to set the property value.</param>
+      <param name="value">The <see cref="T:System.Windows.Documents.FlowDocument" /> to assign to the object.</param>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior">
+      <summary>
+   Provides an attached behavior that enables binding a <see cref="T:System.Windows.Controls.RichTextBox" />'s
+   vertical scroll position through a dependency property, since
+   <see cref="T:System.Windows.Controls.RichTextBox" /> does not natively support data binding for scrolling.
+   </summary>
+    </member>
+    <member name="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty">
+      <summary>
+   Identifies the VerticalOffset attached dependency property, which allows
+   the vertical scroll position of a <see cref="T:System.Windows.Controls.RichTextBox" /> to be set or bound.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.GetVerticalOffset(DependencyObject)">
+      <summary>
+   Gets the value of the <see cref="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty" /> attached property for the specified element.
+   </summary>
+      <param name="obj">The dependency object to read the value from.</param>
+      <returns>The current vertical offset value.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.SetVerticalOffset(DependencyObject,System.Double)">
+      <summary>
+   Sets the value of the <see cref="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty" /> attached property on the specified element.
+   </summary>
+      <param name="obj">The dependency object to set the value on.</param>
+      <param name="value">The vertical offset value to apply.</param>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior">
+      <summary>
+   Bereitgestellt eine angehängte Eigenschaft, mit der die Cursorposition bzw. Auswahl
+   eines <see cref="T:System.Windows.Controls.RichTextBox" />-Steuerelements über Bindings (z. B. aus einem ViewModel)
+   gesteuert werden kann.
+   </summary>
+    </member>
+    <member name="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty">
+      <summary>
+   Angehängte Eigenschaft, die eine <see cref="T:System.Windows.Documents.TextPointer" />-Position innerhalb eines
+   <see cref="T:System.Windows.Controls.RichTextBox" />-Steuerelements festlegt. Beim Setzen wird die Auswahl an dieser
+   Position platziert, der Fokus auf das Steuerelement gesetzt und es wird an die Position gescrollt.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.GetSelectionPosition(DependencyObject)">
+      <summary>
+   Ruft den Wert der <see cref="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty" />-Eigenschaft für das angegebene Objekt ab.
+   </summary>
+      <param name="obj">Das Zielobjekt, üblicherweise ein <see cref="T:System.Windows.Controls.RichTextBox" />-Steuerelement.</param>
+      <returns>Die aktuell zugewiesene <see cref="T:System.Windows.Documents.TextPointer" />-Position.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SetSelectionPosition(DependencyObject,TextPointer)">
+      <summary>
+   Legt den Wert der <see cref="F:PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty" />-Eigenschaft für das angegebene Objekt fest.
+   </summary>
+      <param name="obj">Das Zielobjekt, üblicherweise ein <see cref="T:System.Windows.Controls.RichTextBox" />-Steuerelement.</param>
+      <param name="value">Die zu setzende <see cref="T:System.Windows.Documents.TextPointer" />-Position.</param>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior">
+      <summary>
+   Stellt eine angehängte Eigenschaft ("Attached Property") bereit, die eine bidirektionale
+   Bindung des <see cref="P:System.Windows.Controls.TreeView.SelectedItem" /> an eine ViewModel-Eigenschaft ermöglicht,
+   da <see cref="P:System.Windows.Controls.TreeView.SelectedItem" /> selbst schreibgeschützt ist und daher nicht direkt
+   gebunden werden kann.
+   </summary>
+    </member>
+    <member name="F:PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SelectedItemProperty">
+      <summary>
+   Identifiziert die angehängte "SelectedItem"-Abhängigkeitseigenschaft, die es ermöglicht,
+   das ausgewählte Element eines <see cref="T:System.Windows.Controls.TreeView" /> über Data-Binding zu lesen und zu setzen.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.GetSelectedItem(DependencyObject)">
+      <summary>
+   Ruft den Wert der angehängten "SelectedItem"-Eigenschaft für das angegebene Abhängigkeitsobjekt ab.
+   </summary>
+      <param name="obj">Das <see cref="T:System.Windows.DependencyObject" />, in der Regel ein <see cref="T:System.Windows.Controls.TreeView" />, dessen Wert abgerufen werden soll.</param>
+      <returns>Das aktuell ausgewählte Element.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SetSelectedItem(DependencyObject,System.Object)">
+      <summary>
+   Legt den Wert der angehängten "SelectedItem"-Eigenschaft für das angegebene Abhängigkeitsobjekt fest.
+   </summary>
+      <param name="obj">Das <see cref="T:System.Windows.DependencyObject" />, in der Regel ein <see cref="T:System.Windows.Controls.TreeView" />, dessen Wert festgelegt werden soll.</param>
+      <param name="value">Das Element, das als ausgewählt markiert werden soll.</param>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter">
+      <summary>
+   Konvertiert einen <see cref="T:System.Boolean" />-Wert in einen <see cref="T:System.Windows.Visibility" />-Wert
+   zur Verwendung in WPF-Bindings.
+   </summary>
+      <remarks>
+   Ist der gebundene Wert <c>true</c>, wird <see cref="F:System.Windows.Visibility.Visible" /> zurückgegeben.
+   Andernfalls wird standardmäßig <see cref="F:System.Windows.Visibility.Collapsed" /> zurückgegeben,
+   sofern über den <c>ConverterParameter</c> nicht <see cref="F:System.Windows.Visibility.Hidden" />
+   angegeben wurde.
+   </remarks>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.Convert(System.Object,Type,System.Object,CultureInfo)">
+      <summary>
+   Konvertiert einen booleschen Wert in einen entsprechenden <see cref="T:System.Windows.Visibility" />-Wert.
+   </summary>
+      <param name="value">
+   Der zu konvertierende Wert. Es wird erwartet, dass es sich um einen
+   <see cref="T:System.Boolean" /> handelt; andere Werte werden als <c>false</c> behandelt.
+   </param>
+      <param name="targetType">Der Typ der Bindungsziel-Eigenschaft (wird nicht verwendet).</param>
+      <param name="parameter">
+   Optionaler Parameter vom Typ <see cref="T:System.Windows.Visibility" />, der den Zustand festlegt,
+   der zurückgegeben wird, wenn <paramref name="value" /><c>false</c> ist
+   (z. B. <see cref="F:System.Windows.Visibility.Hidden" /> statt des Standardwerts
+   <see cref="F:System.Windows.Visibility.Collapsed" />). <see cref="F:System.Windows.Visibility.Hidden" /> reserviert
+   weiterhin Platz im Layout und verschiebt nachfolgende Elemente nicht.
+   </param>
+      <param name="culture">Die zu verwendende Kultur im Konverter (wird nicht verwendet).</param>
+      <returns>
+        <see cref="F:System.Windows.Visibility.Visible" />, wenn <paramref name="value" /><c>true</c> ist;
+   andernfalls der über <paramref name="parameter" /> angegebene Zustand oder
+   standardmäßig <see cref="F:System.Windows.Visibility.Collapsed" />.
+   </returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.ConvertBack(System.Object,Type,System.Object,CultureInfo)">
+      <summary>
+   Nicht implementiert. Diese Konvertierungsrichtung wird von diesem Konverter
+   nicht unterstützt.
+   </summary>
+      <param name="value">Der zu konvertierende Wert (wird nicht verwendet).</param>
+      <param name="targetType">Der Zieltyp der Konvertierung (wird nicht verwendet).</param>
+      <param name="parameter">Ein optionaler Parameter (wird nicht verwendet).</param>
+      <param name="culture">Die zu verwendende Kultur (wird nicht verwendet).</param>
+      <returns>Wird nie zurückgegeben.</returns>
+      <exception cref="T:System.NotImplementedException">Wird immer ausgelöst.</exception>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Converters.HighlightTextConverter">
+      <summary>
+   Ein <see cref="T:System.Windows.Data.IMultiValueConverter" />, der einen Text anhand eines
+   Filterbegriffs in <see cref="T:System.Windows.Documents.Run" />-Elemente aufteilt und die
+   Fundstellen optisch hervorhebt (z. B. für Suchfunktionen in der UI).
+   Nicht übereinstimmende Textteile werden im Normalstil dargestellt,
+   übereinstimmende Teile im Hervorhebungsstil (Hintergrundfarbe und
+   Schriftgewicht).
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightBackground">
+      <summary>
+   Hintergrundfarbe, mit der übereinstimmende Textteile
+   hervorgehoben werden. Standardwert: <see cref="P:System.Windows.Media.Brushes.LightGoldenrodYellow" />.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalForeground">
+      <summary>
+   Vordergrundfarbe (Schriftfarbe), die sowohl für normale als auch
+   für hervorgehobene Textteile verwendet wird.
+   Standardwert: <see cref="P:System.Windows.Media.Brushes.Black" />.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalWeight">
+      <summary>
+   Schriftgewicht für nicht hervorgehobene Textteile.
+   Standardwert: <see cref="P:System.Windows.FontWeights.SemiBold" />.
+   </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightWeight">
+      <summary>
+   Schriftgewicht für hervorgehobene (dem Filter entsprechende)
+   Textteile. Standardwert: <see cref="P:System.Windows.FontWeights.Bold" />.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.Convert(System.Object[],Type,System.Object,CultureInfo)">
+      <summary>
+   Wandelt einen Ausgangstext und einen Filterbegriff in eine
+   Sammlung von <see cref="T:System.Windows.Documents.Run" />-Elementen um, wobei alle
+   Vorkommen des Filterbegriffs (Groß-/Kleinschreibung wird
+   ignoriert) hervorgehoben werden.
+   </summary>
+      <param name="values">
+   Ein Array mit mindestens zwei Werten:
+   <c>values[0]</c> ist der anzuzeigende Text,
+   <c>values[1]</c> ist der Filterbegriff, nach dem gesucht wird.
+   </param>
+      <param name="targetType">Der Zieltyp der Bindung (wird nicht verwendet).</param>
+      <param name="parameter">Ein optionaler Konverterparameter (wird nicht verwendet).</param>
+      <param name="culture">Die zu verwendende Kultur (wird nicht verwendet).</param>
+      <returns>
+   Eine <see cref="T:PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy" />, die abwechselnd normale
+   und hervorgehobene <see cref="T:System.Windows.Documents.Run" />-Elemente enthält, oder
+   <c>null</c>, wenn <paramref name="values" /><c>null</c> ist oder
+   weniger als zwei Elemente enthält. Ist der Filterbegriff leer
+   oder besteht nur aus Leerzeichen, wird der gesamte Text als
+   einzelner normaler Run zurückgegeben.
+   </returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Converters.HighlightTextConverter.ConvertBack(System.Object,Type[],System.Object,CultureInfo)">
+      <summary>
+   Diese Rückkonvertierung wird nicht unterstützt, da es sich um
+   eine reine Anzeige-Konvertierung handelt.
+   </summary>
+      <param name="value">Der Wert, der zurückkonvertiert werden soll.</param>
+      <param name="targetTypes">Die Zieltypen der Quellbindungen.</param>
+      <param name="parameter">Ein optionaler Konverterparameter.</param>
+      <param name="culture">Die zu verwendende Kultur.</param>
+      <exception cref="T:System.NotSupportedException">
+   Wird immer ausgelöst, da die Rückkonvertierung nicht unterstützt wird.
+   </exception>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter">
+      <summary>
+   Ein Value-Converter, der einen booleschen Wert invertiert und ihn
+   anschließend in einen <see cref="T:System.Windows.Visibility" />-Wert
+   umwandelt, indem die Konvertierungslogik der Basisklasse
+   <see cref="T:PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter" /> genutzt wird.
+   </summary>
+      <remarks>
+   Dieser Converter ist nützlich, um Steuerelemente in XAML abhängig
+   von einem invertierten booleschen Zustand ein- oder auszublenden,
+   z. B. wenn ein Element nur sichtbar sein soll, wenn eine
+   entsprechende Eigenschaft <c>false</c> ist.
+   </remarks>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.Convert(System.Object,Type,System.Object,CultureInfo)">
+      <summary>
+   Invertiert den übergebenen booleschen Wert und konvertiert ihn
+   anschließend mithilfe der Basisklasse in einen
+   <see cref="T:System.Windows.Visibility" />-Wert.
+   </summary>
+      <param name="value">
+   Der zu konvertierende Wert. Es wird erwartet, dass es sich um
+   einen <see cref="T:System.Boolean" /> oder <see cref="T:System.Nullable`1" />
+   handelt. Ist der Wert <c>null</c> oder kein boolescher Wert,
+   wird <c>false</c> angenommen (und somit zu <c>true</c> invertiert).
+   </param>
+      <param name="targetType">Der Zieltyp der Bindung.</param>
+      <param name="parameter">
+   Ein optionaler Konverterparameter, der an die Basisklasse
+   weitergereicht wird.
+   </param>
+      <param name="culture">
+   Die für die Konvertierung zu verwendende Kultur.
+   </param>
+      <returns>
+   Ein <see cref="T:System.Windows.Visibility" />-Wert, der auf dem
+   invertierten booleschen Eingabewert basiert.
+   </returns>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper">
+      <summary> Provides helper methods to build a <see cref="T:System.Windows.Documents.FlowDocument" /> that visually highlights printer ticket options (e.g. PSK/PSF options) within an XML string. </summary>
+    </member>
+    <member name="P:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.XmlOptionIndex">
+      <summary>
+   Gets or sets an index that maps option names (e.g. "psk:Portrait") to their
+   corresponding <see cref="T:System.Windows.Documents.TextPointer" /> position within the generated document.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.Build">
+      <summary>
+   Creates a new instance of <see cref="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper" />.
+   </summary>
+      <returns>A new <see cref="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper" /> instance ready for further configuration.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithActiveOptions(HashSet{System.String})">
+      <summary>
+   Specifies the set of option names that should be highlighted as "active"
+   in the generated document.
+   </summary>
+      <param name="activeOptions">The set of active option names (case-insensitive).</param>
+      <returns>The current <see cref="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper" /> instance for method chaining.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontFamily(FontFamily)">
+      <summary>
+   Specifies the font family to use for the generated document.
+   </summary>
+      <param name="fontFamily">The desired font family. Defaults to "Consolas" if null.</param>
+      <returns>The current <see cref="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper" /> instance for method chaining.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontSize(System.Double)">
+      <summary>
+   Specifies the font size to use for the generated document.
+   </summary>
+      <param name="fontSize">The desired font size. Must be greater than zero, otherwise defaults to 12.0.</param>
+      <returns>The current <see cref="T:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper" /> instance for method chaining.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.BuildHighlightedTicketDocument(System.String)">
+      <summary>
+   Builds a <see cref="T:System.Windows.Documents.FlowDocument" /> from the given XML string, highlighting
+   recognized PSK/PSF options and indexing their positions in <see cref="P:PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.XmlOptionIndex" />.
+   </summary>
+      <param name="xml">The raw XML ticket content to render and highlight.</param>
+      <returns>A <see cref="T:System.Windows.Documents.FlowDocument" /> containing the highlighted content.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.IsActiveInTicket(PrintTicket,System.Object)">
+      <summary>
+   Prüft, ob ein bestimmter Capability-Wert im angegebenen <see cref="T:System.Printing.PrintTicket" /> aktiv ist.
+   </summary>
+      <remarks>
+   Implementiert für Container-Werte (z. B. <c>ReadOnlyCollection&lt;T&gt;</c>), die
+   <see cref="T:System.Collections.IEnumerable" /> implementieren, aber keine <see cref="T:System.String" />-Instanzen sind,
+   eine rekursive Prüfung: Es wird jedes Element einzeln geprüft, und die Methode liefert
+   <see langword="true" /> zurück, sobald mindestens ein Element im Ticket aktiv ist.
+   Für einzelne Werte wird der konkrete Capability-Typ (z. B. <see cref="T:System.Printing.Duplexing" />,
+   <see cref="T:System.Printing.PageOrientation" />, <see cref="T:System.Printing.PageMediaSize" /> usw.) per Pattern Matching
+   erkannt und mit der entsprechenden Eigenschaft des Tickets verglichen.
+   </remarks>
+      <param name="ticket">
+   Das <see cref="T:System.Printing.PrintTicket" />, gegen das der Capability-Wert geprüft werden soll.
+   </param>
+      <param name="capabilityValue">
+   Der zu prüfende Capability-Wert. Kann ein einzelner Wert oder eine
+   <see cref="T:System.Collections.IEnumerable" />-Sammlung von Werten sein.
+   </param>
+      <returns>
+        <see langword="true" />, wenn der angegebene Capability-Wert (bzw. mindestens ein Element
+   einer übergebenen Sammlung) im <paramref name="ticket" /> aktiv ist; andernfalls
+   <see langword="false" />. Ist <paramref name="ticket" /> oder <paramref name="capabilityValue" /><see langword="null" />, wird ebenfalls <see langword="false" /> zurückgegeben.
+   </returns>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers">
+      <summary>
+   Stellt Hilfsmethoden zur Verarbeitung und Anzeige von Druckerfähigkeiten
+   (<see cref="T:System.Printing.PrintCapabilities" />) und Druckaufträgen (<see cref="T:System.Printing.PrintTicket" />) bereit,
+   unter anderem zum Aufbau einer hierarchischen Knotenstruktur (<see cref="T:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode" />)
+   mittels Reflektion sowie zum Abgleich mit einem Print-Ticket.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.GetCapabilityOptionName(System.Object)">
+      <summary>
+   Ermittelt den Anzeigenamen einer Fähigkeits-Option, indem versucht wird,
+   die Eigenschaft "Name" des angegebenen Objekts per Reflektion auszulesen.
+   </summary>
+      <param name="value">Das Objekt, dessen "Name"-Eigenschaft ausgelesen werden soll.</param>
+      <returns>
+   Der Wert der "Name"-Eigenschaft als <see cref="T:System.String" />, oder <see langword="null" />,
+   wenn <paramref name="value" /><see langword="null" /> ist, keine "Name"-Eigenschaft besitzt
+   oder diese nicht vom Typ <see cref="T:System.String" /> ist.
+   </returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.CompareWithTicket(CapabilityNode,PrintTicket)">
+      <summary>
+   Gleicht rekursiv einen <see cref="T:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode" />-Baum mit einem <see cref="T:System.Printing.PrintTicket" /> ab
+   und markiert jeden Knoten (<see cref="P:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsInTicket" />) danach, ob sein Wert
+   im übergebenen Print-Ticket aktiv gesetzt ist.
+   </summary>
+      <param name="node">
+   Der zu prüfende Knoten. Wenn <see langword="null" />, wird die Methode ohne Aktion beendet.
+   </param>
+      <param name="ticket">Das Print-Ticket, gegen das der Knoten abgeglichen wird.</param>
+      <remarks>
+   Nachdem alle Kindknoten rekursiv verarbeitet wurden, wird ein Elternknoten zusätzlich
+   als im Ticket aktiv markiert, wenn mindestens einer seiner direkten Kindknoten aktiv ist.
+   </remarks>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.BuildNode(System.Object,System.String)">
+      <summary>
+   Baut rekursiv per Reflektion einen <see cref="T:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode" />-Baum aus einem beliebigen Objekt auf.
+   Primitive Typen, Zeichenfolgen und Enums werden als Blattknoten behandelt, Auflistungen
+   (<see cref="T:System.Collections.IEnumerable" />) werden elementweise als Kindknoten aufgelöst, und für alle anderen
+   Objekte werden die öffentlichen Instanzeigenschaften rekursiv als Kindknoten hinzugefügt.
+   </summary>
+      <param name="obj">Das Objekt, das in einen Knotenbaum umgewandelt werden soll.</param>
+      <param name="name">Der Anzeigename, der dem erzeugten Knoten zugewiesen wird.</param>
+      <returns>
+   Der erzeugte <see cref="T:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode" />, der <paramref name="obj" /> und dessen
+   gegebenenfalls vorhandene Kindstruktur repräsentiert.
+   </returns>
+      <remarks>
+   Wird beim Auslesen einer Eigenschaft eine Ausnahme ausgelöst, so wird anstelle des Werts
+   ein Fehlerknoten mit Typ "Error" und der Ausnahmemeldung als Anzeigewert hinzugefügt,
+   und <see cref="P:PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsSupported" /> wird auf <see langword="false" /> gesetzt.
+   </remarks>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper">
+      <summary>
+   Stellt Hilfsmethoden zur Konvertierung und Analyse von <see cref="T:System.Printing.PrintTicket" />-Objekten
+   als XML bereit, basierend auf dem Print Schema Framework von Microsoft.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.ExtractActiveOptions(PrintTicket)">
+      <summary>
+   Extrahiert die Namen aller aktiven "Option"-Elemente aus dem XML eines <see cref="T:System.Printing.PrintTicket" />.
+   </summary>
+      <param name="ticket">Das <see cref="T:System.Printing.PrintTicket" />, dessen aktive Optionen ermittelt werden sollen. Kann <see langword="null" /> sein.</param>
+      <returns>
+   Eine <see cref="T:System.Collections.Generic.HashSet`1" /> mit den Namen aller gefundenen Optionen (ohne Berücksichtigung der Groß-/Kleinschreibung).
+   Ist <paramref name="ticket" /><see langword="null" />, wird eine leere Menge zurückgegeben.
+   </returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.CleanPrintTicketXml(System.String)">
+      <summary>
+   Bereinigt ein PrintTicket-XML, indem alle "ParameterInit"-Elemente mit dem Namen
+   "ns0000:PageDevmodeSnapshot" entfernt werden. Dies wird verwendet, um redundante oder
+   treiberspezifische Snapshot-Daten aus dem XML zu filtern.
+   </summary>
+      <param name="xml">Der zu bereinigende PrintTicket-XML-String.</param>
+      <returns>Der bereinigte XML-String ohne "PageDevmodeSnapshot"-Parameter.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.PrintTicketToXml(PrintTicket)">
+      <summary>
+   Konvertiert ein <see cref="T:System.Printing.PrintTicket" />-Objekt in seine XML-Darstellung als String.
+   </summary>
+      <param name="ticket">Das zu konvertierende <see cref="T:System.Printing.PrintTicket" />. Kann <see langword="null" /> sein.</param>
+      <returns>
+   Der XML-Inhalt des <see cref="T:System.Printing.PrintTicket" /> als String, oder <c>"&lt;null&gt;"</c>,
+   falls <paramref name="ticket" /><see langword="null" /> ist.
+   </returns>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy">
+      <summary>
+   Stellt eine Hilfsklasse dar, die als typisierte Auflistung von <see cref="T:System.Windows.Documents.Inline" />-Elementen dient.
+   Wird verwendet, um Sammlungen von Inline-Elementen (z. B. für XAML-Bindungen oder Attached Properties
+   in TreeView-Steuerelementen) als eigenständigen Typ zu deklarieren.
+   </summary>
+    </member>
+    <member name="T:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight">
+      <summary>
+   Stellt eine angehängte Eigenschaft (Attached Property) für <see cref="T:System.Windows.Controls.TextBlock" /> bereit,
+   mit der eine Sammlung von <see cref="T:System.Windows.Documents.Inline" />-Elementen (z. B. zur Hervorhebung von Text)
+   über Bindings gesetzt werden kann. Dies wird benötigt, da <see cref="P:System.Windows.Controls.TextBlock.Inlines" />
+   selbst nicht bindbar ist.
+   </summary>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.GetInlines(DependencyObject)">
+      <summary>
+   Ruft den Wert der angehängten <see cref="F:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty" />-Eigenschaft für das
+   angegebene Abhängigkeitsobjekt ab.
+   </summary>
+      <param name="obj">Das Abhängigkeitsobjekt, dessen Eigenschaftswert abgerufen werden soll.</param>
+      <returns>Die Sammlung von <see cref="T:System.Windows.Documents.Inline" />-Elementen, die dem Objekt zugewiesen sind.</returns>
+    </member>
+    <member name="M:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.SetInlines(DependencyObject,IEnumerable{Inline})">
+      <summary>
+   Legt den Wert der angehängten <see cref="F:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty" />-Eigenschaft für das
+   angegebene Abhängigkeitsobjekt fest.
+   </summary>
+      <param name="obj">Das Abhängigkeitsobjekt, dessen Eigenschaftswert festgelegt werden soll.</param>
+      <param name="value">Die Sammlung von <see cref="T:System.Windows.Documents.Inline" />-Elementen, die zugewiesen werden soll.</param>
+    </member>
+    <member name="F:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty">
+      <summary>
+   Identifiziert die <c>Inlines</c>-Abhängigkeitseigenschaft, die es ermöglicht, eine
+   Sammlung von <see cref="T:System.Windows.Documents.Inline" />-Elementen an einen <see cref="T:System.Windows.Controls.TextBlock" /> zu binden.
+   Bei Änderung des Werts wird <see cref="M:PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.OnInlinesChanged(DependencyObject,DependencyPropertyChangedEventArgs)" /> aufgerufen, um die
+   <see cref="P:System.Windows.Controls.TextBlock.Inlines" />-Auflistung entsprechend zu aktualisieren.
+   </summary>
+    </member>
+    <member name="T:PrinterCapsViewer.App">
+      <summary> Interaction logic for App.xaml </summary>
+    </member>
+  </members>
+</doc>

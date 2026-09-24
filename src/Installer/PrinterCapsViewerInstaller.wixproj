@@ -1,0 +1,17 @@
+﻿<Project Sdk="WixToolset.Sdk/5.0.2">
+  <PropertyGroup>
+    <OutputType>Package</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputPath>$(MSBuildThisFileDirectory)..\..\dist\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WixToolset.UI.wixext">
+      <IncludeAssets>all</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="WixToolset.Util.wixext">
+      <IncludeAssets>all</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  
+</Project>

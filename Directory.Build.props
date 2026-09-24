@@ -1,0 +1,21 @@
+<Project>
+	<PropertyGroup>
+		<LangVersion>preview</LangVersion>
+		<ImplicitUsings>false</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+		<TargetFrameworks>net8.0-windows</TargetFrameworks>
+		<AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+		<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+		<Deterministic>true</Deterministic>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<Copyright>2017-2030 GFEAP GmbH, Bensheim, Germany</Copyright>
+		<Authors>Michael Friedl</Authors>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>C:/SoftwareEngineering/GWorx.Tools/GWorxFx.snk</AssemblyOriginatorKeyFile>
+		<ManifestKeyFile>C:/SoftwareEngineering/GWorx.Tools/GWorxFxCert.pfx</ManifestKeyFile>
+		<ManifestCertificateThumbprint>BC286D9819EB721B1FAB10D39C14AF6059EA0DDB</ManifestCertificateThumbprint>
+		<Company>GFEAP GmbH, Bensheim, Germany</Company>		
+	</PropertyGroup>
+</Project>

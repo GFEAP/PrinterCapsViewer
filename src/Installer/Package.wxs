@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+
+  <Package Name="PrinterCapsViewer"
+           Manufacturer="GFEAP GmbH"
+           Version="0.9.0.0"
+           UpgradeCode="{EBBF3E56-7001-4F6A-8EC5-D52A478EF4EA}">
+
+    <MajorUpgrade DowngradeErrorMessage="Eine neuere Version von [ProductName] ist bereits installiert." />
+
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="MainFeature" 
+             Title="PrinterCapsViewer"
+             Level="1">
+      <ComponentGroupRef Id="AppComponents" />
+      <ComponentRef Id="DesktopShortcutComponent" />
+      <ComponentRef Id="StartMenuShortcutComponent" />
+    </Feature>
+
+    <ui:WixUI Id="WixUI_InstallDir"
+              InstallDirectory="INSTALLFOLDER" />
+
+  </Package>
+</Wix>

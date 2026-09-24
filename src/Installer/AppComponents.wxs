@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="cmp_98D9CBEBC7E4C382" Guid="*">
+        <File Id="fil_98D9CBEBC7E4C382" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\CommunityToolkit.Mvvm.dll" />
+      </Component>
+      <Component Id="cmp_FCD648738C32B2C7" Guid="*">
+        <File Id="fil_FCD648738C32B2C7" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.deps.json" />
+      </Component>
+      <Component Id="cmp_A329C8F186597DD5" Guid="*">
+        <File Id="fil_A329C8F186597DD5" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.dll" />
+      </Component>
+      <Component Id="cmp_8E245C4AB0D6CA07" Guid="*">
+        <File Id="fil_8E245C4AB0D6CA07" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="cmp_17F76398B74254A5" Guid="*">
+        <File Id="fil_17F76398B74254A5" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.pdb" />
+      </Component>
+      <Component Id="cmp_40C4E13948A26E0C" Guid="*">
+        <File Id="fil_40C4E13948A26E0C" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.runtimeconfig.json" />
+      </Component>
+      <Component Id="cmp_366DB5DF9E721D2C" Guid="*">
+        <File Id="fil_366DB5DF9E721D2C" Source="C:\SoftwareEngineering\GWorx.Tools\PrinterCapsViewer\src\Application\bin\Release\net8.0-windows\publish\PrinterCapsViewer.xml" />
+      </Component>
+    </DirectoryRef>
+    <ComponentGroup Id="AppComponents">
+      <ComponentRef Id="cmp_98D9CBEBC7E4C382" />
+      <ComponentRef Id="cmp_FCD648738C32B2C7" />
+      <ComponentRef Id="cmp_A329C8F186597DD5" />
+      <ComponentRef Id="cmp_8E245C4AB0D6CA07" />
+      <ComponentRef Id="cmp_17F76398B74254A5" />
+      <ComponentRef Id="cmp_40C4E13948A26E0C" />
+      <ComponentRef Id="cmp_366DB5DF9E721D2C" />
+    </ComponentGroup>
+  </Fragment>
+</Wix>

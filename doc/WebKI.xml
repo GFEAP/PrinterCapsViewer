@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="ActiveOptions property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.ActiveOptions.htm" />
+  <HelpKINode Title="App class" Url="html/AllMembers.T-PrinterCapsViewer.App.htm" />
+  <HelpKINode Title="App class" Url="html/T-PrinterCapsViewer.App.htm" />
+  <HelpKINode Title="App class">
+    <HelpKINode Title="about App class" Url="html/T-PrinterCapsViewer.App.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.App.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-PrinterCapsViewer.App.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.App.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.App.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BindableDocumentProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.BindableDocumentProperty.htm" />
+  <HelpKINode Title="BoolToVisibilityConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+  <HelpKINode Title="BoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+  <HelpKINode Title="BoolToVisibilityConverter class">
+    <HelpKINode Title="about BoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BoolToVisibilityConverter.Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.Convert.htm" />
+  <HelpKINode Title="BoolToVisibilityConverter.ConvertBack method" Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.ConvertBack.htm" />
+  <HelpKINode Title="Build method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.Build.htm" />
+  <HelpKINode Title="BuildHighlightedTicketDocument method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.BuildHighlightedTicketDocument.htm" />
+  <HelpKINode Title="BuildNode method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.BuildNode.htm" />
+  <HelpKINode Title="CapabilityNode class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+  <HelpKINode Title="CapabilityNode class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+  <HelpKINode Title="CapabilityNode class">
+    <HelpKINode Title="about CapabilityNode class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+    <HelpKINode Title="constructor" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+  </HelpKINode>
+  <HelpKINode Title="CapabilityNode.CapabilityNode constructor" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.-ctor.htm" />
+  <HelpKINode Title="CapabilityNode.Children property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Children.htm" />
+  <HelpKINode Title="CapabilityNode.DisplayValue property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.DisplayValue.htm" />
+  <HelpKINode Title="CapabilityNode.IsExpanded property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsExpanded.htm" />
+  <HelpKINode Title="CapabilityNode.IsIncompatible property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsIncompatible.htm" />
+  <HelpKINode Title="CapabilityNode.IsInTicket property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsInTicket.htm" />
+  <HelpKINode Title="CapabilityNode.IsSupported property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsSupported.htm" />
+  <HelpKINode Title="CapabilityNode.MatchesFilter property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.MatchesFilter.htm" />
+  <HelpKINode Title="CapabilityNode.Name property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Name.htm" />
+  <HelpKINode Title="CapabilityNode.Type property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Type.htm" />
+  <HelpKINode Title="CapabilityNode.Value property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Value.htm" />
+  <HelpKINode Title="Children property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Children.htm" />
+  <HelpKINode Title="CleanPrintTicketXml method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.CleanPrintTicketXml.htm" />
+  <HelpKINode Title="CompareWithTicket method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.CompareWithTicket.htm" />
+  <HelpKINode Title="Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.Convert.htm" />
+  <HelpKINode Title="Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.Convert.htm" />
+  <HelpKINode Title="Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.Convert.htm" />
+  <HelpKINode Title="ConvertBack method" Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.ConvertBack.htm" />
+  <HelpKINode Title="ConvertBack method" Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.ConvertBack.htm" />
+  <HelpKINode Title="DisplayValue property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.DisplayValue.htm" />
+  <HelpKINode Title="ExtractActiveOptions method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.ExtractActiveOptions.htm" />
+  <HelpKINode Title="FilterText property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.FilterText.htm" />
+  <HelpKINode Title="FlowDocHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+  <HelpKINode Title="FlowDocHelper class" Url="html/T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+  <HelpKINode Title="FlowDocHelper class">
+    <HelpKINode Title="about FlowDocHelper class" Url="html/T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FlowDocHelper.Build method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.Build.htm" />
+  <HelpKINode Title="FlowDocHelper.BuildHighlightedTicketDocument method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.BuildHighlightedTicketDocument.htm" />
+  <HelpKINode Title="FlowDocHelper.WithActiveOptions method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithActiveOptions.htm" />
+  <HelpKINode Title="FlowDocHelper.WithFontFamily method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontFamily.htm" />
+  <HelpKINode Title="FlowDocHelper.WithFontSize method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontSize.htm" />
+  <HelpKINode Title="FlowDocHelper.XmlOptionIndex property" Url="html/P-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.XmlOptionIndex.htm" />
+  <HelpKINode Title="GetBindableDocument method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.GetBindableDocument.htm" />
+  <HelpKINode Title="GetCapabilityOptionName method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.GetCapabilityOptionName.htm" />
+  <HelpKINode Title="GetInlines method" Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.GetInlines.htm" />
+  <HelpKINode Title="GetSelectedItem method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.GetSelectedItem.htm" />
+  <HelpKINode Title="GetSelectionPosition method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.GetSelectionPosition.htm" />
+  <HelpKINode Title="GetVerticalOffset method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.GetVerticalOffset.htm" />
+  <HelpKINode Title="HighlightBackground property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightBackground.htm" />
+  <HelpKINode Title="HighlightTextConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+  <HelpKINode Title="HighlightTextConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+  <HelpKINode Title="HighlightTextConverter class">
+    <HelpKINode Title="about HighlightTextConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HighlightTextConverter.Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.Convert.htm" />
+  <HelpKINode Title="HighlightTextConverter.ConvertBack method" Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.ConvertBack.htm" />
+  <HelpKINode Title="HighlightTextConverter.HighlightBackground property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightBackground.htm" />
+  <HelpKINode Title="HighlightTextConverter.HighlightWeight property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightWeight.htm" />
+  <HelpKINode Title="HighlightTextConverter.NormalForeground property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalForeground.htm" />
+  <HelpKINode Title="HighlightTextConverter.NormalWeight property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalWeight.htm" />
+  <HelpKINode Title="HighlightWeight property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightWeight.htm" />
+  <HelpKINode Title="InlineCollectionDummy class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+  <HelpKINode Title="InlineCollectionDummy class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+  <HelpKINode Title="InlineCollectionDummy class">
+    <HelpKINode Title="about InlineCollectionDummy class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InlinesProperty field" Url="html/F-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty.htm" />
+  <HelpKINode Title="InverseBoolToVisibilityConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+  <HelpKINode Title="InverseBoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+  <HelpKINode Title="InverseBoolToVisibilityConverter class">
+    <HelpKINode Title="about InverseBoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+  </HelpKINode>
+  <HelpKINode Title="InverseBoolToVisibilityConverter.Convert method" Url="html/M-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.Convert.htm" />
+  <HelpKINode Title="IsActiveInTicket method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.IsActiveInTicket.htm" />
+  <HelpKINode Title="IsExpanded property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.IsExpanded.htm" />
+  <HelpKINode Title="IsExpanded property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsExpanded.htm" />
+  <HelpKINode Title="IsIncompatible property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsIncompatible.htm" />
+  <HelpKINode Title="IsInTicket property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsInTicket.htm" />
+  <HelpKINode Title="IsSupported property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsSupported.htm" />
+  <HelpKINode Title="MainViewModel class" Url="html/AllMembers.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+  <HelpKINode Title="MainViewModel class" Url="html/T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+  <HelpKINode Title="MainViewModel class">
+    <HelpKINode Title="about MainViewModel class" Url="html/T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+    <HelpKINode Title="constructor" Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainViewModel.ActiveOptions property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.ActiveOptions.htm" />
+  <HelpKINode Title="MainViewModel.FilterText property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.FilterText.htm" />
+  <HelpKINode Title="MainViewModel.IsExpanded property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.IsExpanded.htm" />
+  <HelpKINode Title="MainViewModel.MainViewModel constructor" Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.-ctor.htm" />
+  <HelpKINode Title="MainViewModel.PrintQueues property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.PrintQueues.htm" />
+  <HelpKINode Title="MainViewModel.Root property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.Root.htm" />
+  <HelpKINode Title="MainViewModel.SelectedNode property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedNode.htm" />
+  <HelpKINode Title="MainViewModel.SelectedPosition property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPosition.htm" />
+  <HelpKINode Title="MainViewModel.SelectedPrintQueue property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPrintQueue.htm" />
+  <HelpKINode Title="MainViewModel.SelectedValue property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedValue.htm" />
+  <HelpKINode Title="MainViewModel.SetCloseWindowsAction method" Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.SetCloseWindowsAction.htm" />
+  <HelpKINode Title="MainViewModel.TicketFlowDocument property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketFlowDocument.htm" />
+  <HelpKINode Title="MainViewModel.TicketXml property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketXml.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/AllMembers.T-PrinterCapsViewer.Application.MainWindow.htm" />
+  <HelpKINode Title="MainWindow class" Url="html/T-PrinterCapsViewer.Application.MainWindow.htm" />
+  <HelpKINode Title="MainWindow class">
+    <HelpKINode Title="about MainWindow class" Url="html/T-PrinterCapsViewer.Application.MainWindow.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Application.MainWindow.htm" />
+    <HelpKINode Title="constructor" Url="html/M-PrinterCapsViewer.Application.MainWindow.-ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events.T-PrinterCapsViewer.Application.MainWindow.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Application.MainWindow.htm" />
+    <HelpKINode Title="properties" Url="html/Properties.T-PrinterCapsViewer.Application.MainWindow.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MainWindow.MainWindow constructor" Url="html/M-PrinterCapsViewer.Application.MainWindow.-ctor.htm" />
+  <HelpKINode Title="MatchesFilter property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.MatchesFilter.htm" />
+  <HelpKINode Title="Name property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Name.htm" />
+  <HelpKINode Title="NormalForeground property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalForeground.htm" />
+  <HelpKINode Title="NormalWeight property" Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalWeight.htm" />
+  <HelpKINode Title="PrinterCapabilityHelpers class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+  <HelpKINode Title="PrinterCapabilityHelpers class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+  <HelpKINode Title="PrinterCapabilityHelpers class">
+    <HelpKINode Title="about PrinterCapabilityHelpers class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrinterCapabilityHelpers.BuildNode method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.BuildNode.htm" />
+  <HelpKINode Title="PrinterCapabilityHelpers.CompareWithTicket method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.CompareWithTicket.htm" />
+  <HelpKINode Title="PrinterCapabilityHelpers.GetCapabilityOptionName method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.GetCapabilityOptionName.htm" />
+  <HelpKINode Title="PrinterCapsViewer namespace" Url="html/N-PrinterCapsViewer.htm" />
+  <HelpKINode Title="PrinterCapsViewer.App class" Url="html/AllMembers.T-PrinterCapsViewer.App.htm" />
+  <HelpKINode Title="PrinterCapsViewer.App class" Url="html/T-PrinterCapsViewer.App.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Application namespace" Url="html/N-PrinterCapsViewer.Application.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Application.MainWindow class" Url="html/AllMembers.T-PrinterCapsViewer.Application.MainWindow.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Application.MainWindow class" Url="html/T-PrinterCapsViewer.Application.MainWindow.htm" />
+  <HelpKINode Title="PrinterCapsViewer.ApplicationMain namespace" Url="html/N-PrinterCapsViewer.ApplicationMain.htm" />
+  <HelpKINode Title="PrinterCapsViewer.ApplicationMain.MainViewModel class" Url="html/AllMembers.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+  <HelpKINode Title="PrinterCapsViewer.ApplicationMain.MainViewModel class" Url="html/T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors namespace" Url="html/N-PrinterCapsViewer.Shared.Behaviors.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters namespace" Url="html/N-PrinterCapsViewer.Shared.Converters.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.HighlightTextConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.HighlightTextConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter class" Url="html/T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.FlowDoc namespace" Url="html/N-PrinterCapsViewer.Shared.FlowDoc.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper class" Url="html/T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability namespace" Url="html/N-PrinterCapsViewer.Shared.PrinterCapability.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrintTicketHelper namespace" Url="html/N-PrinterCapsViewer.Shared.PrintTicketHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper class" Url="html/T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.TreeViewHelper namespace" Url="html/N-PrinterCapsViewer.Shared.TreeViewHelper.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+  <HelpKINode Title="PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+  <HelpKINode Title="PrintQueues property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.PrintQueues.htm" />
+  <HelpKINode Title="PrintTicketCapabilityMapper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+  <HelpKINode Title="PrintTicketCapabilityMapper class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+  <HelpKINode Title="PrintTicketCapabilityMapper class">
+    <HelpKINode Title="about PrintTicketCapabilityMapper class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrintTicketCapabilityMapper.IsActiveInTicket method" Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.IsActiveInTicket.htm" />
+  <HelpKINode Title="PrintTicketToXml method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.PrintTicketToXml.htm" />
+  <HelpKINode Title="PrintTicketXmlHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+  <HelpKINode Title="PrintTicketXmlHelper class" Url="html/T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+  <HelpKINode Title="PrintTicketXmlHelper class">
+    <HelpKINode Title="about PrintTicketXmlHelper class" Url="html/T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PrintTicketXmlHelper.CleanPrintTicketXml method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.CleanPrintTicketXml.htm" />
+  <HelpKINode Title="PrintTicketXmlHelper.ExtractActiveOptions method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.ExtractActiveOptions.htm" />
+  <HelpKINode Title="PrintTicketXmlHelper.PrintTicketToXml method" Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.PrintTicketToXml.htm" />
+  <HelpKINode Title="RichTextBoxBindingHelper class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+  <HelpKINode Title="RichTextBoxBindingHelper class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+  <HelpKINode Title="RichTextBoxBindingHelper class">
+    <HelpKINode Title="about RichTextBoxBindingHelper class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RichTextBoxBindingHelper.BindableDocumentProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.BindableDocumentProperty.htm" />
+  <HelpKINode Title="RichTextBoxBindingHelper.GetBindableDocument method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.GetBindableDocument.htm" />
+  <HelpKINode Title="RichTextBoxBindingHelper.SetBindableDocument method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.SetBindableDocument.htm" />
+  <HelpKINode Title="RichTextBoxScrollBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+  <HelpKINode Title="RichTextBoxScrollBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+  <HelpKINode Title="RichTextBoxScrollBehavior class">
+    <HelpKINode Title="about RichTextBoxScrollBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RichTextBoxScrollBehavior.GetVerticalOffset method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.GetVerticalOffset.htm" />
+  <HelpKINode Title="RichTextBoxScrollBehavior.SetVerticalOffset method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.SetVerticalOffset.htm" />
+  <HelpKINode Title="RichTextBoxScrollBehavior.VerticalOffsetProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty.htm" />
+  <HelpKINode Title="RichTextBoxSelectionBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+  <HelpKINode Title="RichTextBoxSelectionBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+  <HelpKINode Title="RichTextBoxSelectionBehavior class">
+    <HelpKINode Title="about RichTextBoxSelectionBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RichTextBoxSelectionBehavior.GetSelectionPosition method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.GetSelectionPosition.htm" />
+  <HelpKINode Title="RichTextBoxSelectionBehavior.SelectionPositionProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty.htm" />
+  <HelpKINode Title="RichTextBoxSelectionBehavior.SetSelectionPosition method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SetSelectionPosition.htm" />
+  <HelpKINode Title="Root property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.Root.htm" />
+  <HelpKINode Title="SelectedItemProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SelectedItemProperty.htm" />
+  <HelpKINode Title="SelectedNode property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedNode.htm" />
+  <HelpKINode Title="SelectedPosition property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPosition.htm" />
+  <HelpKINode Title="SelectedPrintQueue property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPrintQueue.htm" />
+  <HelpKINode Title="SelectedValue property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedValue.htm" />
+  <HelpKINode Title="SelectionPositionProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty.htm" />
+  <HelpKINode Title="SetBindableDocument method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.SetBindableDocument.htm" />
+  <HelpKINode Title="SetCloseWindowsAction method" Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.SetCloseWindowsAction.htm" />
+  <HelpKINode Title="SetInlines method" Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.SetInlines.htm" />
+  <HelpKINode Title="SetSelectedItem method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SetSelectedItem.htm" />
+  <HelpKINode Title="SetSelectionPosition method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SetSelectionPosition.htm" />
+  <HelpKINode Title="SetVerticalOffset method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.SetVerticalOffset.htm" />
+  <HelpKINode Title="TextBlockHighlight class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+  <HelpKINode Title="TextBlockHighlight class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+  <HelpKINode Title="TextBlockHighlight class">
+    <HelpKINode Title="about TextBlockHighlight class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TextBlockHighlight.GetInlines method" Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.GetInlines.htm" />
+  <HelpKINode Title="TextBlockHighlight.InlinesProperty field" Url="html/F-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty.htm" />
+  <HelpKINode Title="TextBlockHighlight.SetInlines method" Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.SetInlines.htm" />
+  <HelpKINode Title="TicketFlowDocument property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketFlowDocument.htm" />
+  <HelpKINode Title="TicketXml property" Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketXml.htm" />
+  <HelpKINode Title="TreeViewSelectedItemBehavior class" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+  <HelpKINode Title="TreeViewSelectedItemBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+  <HelpKINode Title="TreeViewSelectedItemBehavior class">
+    <HelpKINode Title="about TreeViewSelectedItemBehavior class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+    <HelpKINode Title="all members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+    <HelpKINode Title="fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+    <HelpKINode Title="methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TreeViewSelectedItemBehavior.GetSelectedItem method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.GetSelectedItem.htm" />
+  <HelpKINode Title="TreeViewSelectedItemBehavior.SelectedItemProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SelectedItemProperty.htm" />
+  <HelpKINode Title="TreeViewSelectedItemBehavior.SetSelectedItem method" Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SetSelectedItem.htm" />
+  <HelpKINode Title="Type property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Type.htm" />
+  <HelpKINode Title="Value property" Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Value.htm" />
+  <HelpKINode Title="VerticalOffsetProperty field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty.htm" />
+  <HelpKINode Title="WithActiveOptions method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithActiveOptions.htm" />
+  <HelpKINode Title="WithFontFamily method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontFamily.htm" />
+  <HelpKINode Title="WithFontSize method" Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontSize.htm" />
+  <HelpKINode Title="XmlOptionIndex property" Url="html/P-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.XmlOptionIndex.htm" />
+</HelpKI>

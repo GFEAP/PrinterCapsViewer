@@ -1,0 +1,48 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="INSTALLFOLDER"
+                 Name="!(bind.Property.Manufacturer) !(bind.Property.ProductName)" />
+    </StandardDirectory>
+  </Fragment>
+
+  <Fragment>
+    <StandardDirectory Id="DesktopFolder">
+      <Component Id="DesktopShortcutComponent" Guid="{1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D}">
+        <RegistryValue Root="HKCU"
+                        Key="Software\GFEAP GmbH\PrinterCapsViewer"
+                        Name="DesktopShortcutInstalled"
+                        Type="integer"
+                        Value="1"
+                        KeyPath="yes" />
+        <Shortcut Id="DesktopShortcut"
+                  Name="PrinterCapsViewer"
+                  Description="PrinterCapsViewer starten"
+                  Target="[INSTALLFOLDER]PrinterCapsViewer.exe"
+                  WorkingDirectory="INSTALLFOLDER" />
+      </Component>
+    </StandardDirectory>
+  </Fragment>
+
+  <Fragment>
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ApplicationProgramsFolder"
+                 Name="!(bind.Property.Manufacturer) !(bind.Property.ProductName)">
+        <Component Id="StartMenuShortcutComponent" Guid="{2B3C4D5E-6F70-4A8B-9C0D-1E2F3A4B5C6D}">
+          <RegistryValue Root="HKCU"
+                          Key="Software\GFEAP GmbH\PrinterCapsViewer"
+                          Name="StartMenuShortcutInstalled"
+                          Type="integer"
+                          Value="1"
+                          KeyPath="yes" />
+          <Shortcut Id="StartMenuShortcut"
+                    Name="PrinterCapsViewer"
+                    Description="PrinterCapsViewer starten"
+                    Target="[INSTALLFOLDER]PrinterCapsViewer.exe"
+                    WorkingDirectory="INSTALLFOLDER" />
+          <RemoveFolder Id="RemoveApplicationProgramsFolder" On="uninstall" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+  </Fragment>
+</Wix>

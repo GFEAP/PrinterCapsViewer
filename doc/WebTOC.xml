@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="34c74591-3357-4be8-98ba-7ba5bb1c77ec" Title="PrinterCapsViewer Namespace" Url="html/N-PrinterCapsViewer.htm">
+    <HelpTOCNode Id="3e3e4ecc-dfeb-4307-a2f0-c34e296be436" Title="App Class" Url="html/T-PrinterCapsViewer.App.htm">
+      <HelpTOCNode Title="App Members" Url="html/AllMembers.T-PrinterCapsViewer.App.htm" />
+      <HelpTOCNode Title="App Methods" Url="html/Methods.T-PrinterCapsViewer.App.htm" />
+      <HelpTOCNode Title="App Properties" Url="html/Properties.T-PrinterCapsViewer.App.htm" />
+      <HelpTOCNode Title="App Events" Url="html/Events.T-PrinterCapsViewer.App.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="94cefcf1-d1d7-4953-be85-20aaed95c126" Title="PrinterCapsViewer.Application Namespace" Url="html/N-PrinterCapsViewer.Application.htm">
+    <HelpTOCNode Id="3b5da8d8-11f0-475b-b026-929471efb3b0" Title="MainWindow Class" Url="html/T-PrinterCapsViewer.Application.MainWindow.htm">
+      <HelpTOCNode Title="MainWindow Members" Url="html/AllMembers.T-PrinterCapsViewer.Application.MainWindow.htm" />
+      <HelpTOCNode Title="MainWindow Constructor " Url="html/M-PrinterCapsViewer.Application.MainWindow.-ctor.htm" />
+      <HelpTOCNode Title="MainWindow Methods" Url="html/Methods.T-PrinterCapsViewer.Application.MainWindow.htm" />
+      <HelpTOCNode Title="MainWindow Properties" Url="html/Properties.T-PrinterCapsViewer.Application.MainWindow.htm" />
+      <HelpTOCNode Title="MainWindow Events" Url="html/Events.T-PrinterCapsViewer.Application.MainWindow.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0ddecb0a-a868-4cb1-a0df-3a7ac70b8c47" Title="PrinterCapsViewer.ApplicationMain Namespace" Url="html/N-PrinterCapsViewer.ApplicationMain.htm">
+    <HelpTOCNode Id="5d94bd0d-04e9-4132-aaa5-58694eba341e" Title="MainViewModel Class" Url="html/T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm">
+      <HelpTOCNode Title="MainViewModel Members" Url="html/AllMembers.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+      <HelpTOCNode Title="MainViewModel Constructor " Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.-ctor.htm" />
+      <HelpTOCNode Id="52b0f6ee-45af-41ff-b575-241abf41a70a" Title="MainViewModel Methods" Url="html/Methods.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm">
+        <HelpTOCNode Title="SetCloseWindowsAction Method " Url="html/M-PrinterCapsViewer.ApplicationMain.MainViewModel.SetCloseWindowsAction.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d900afba-f097-4916-b020-758355aa866c" Title="MainViewModel Properties" Url="html/Properties.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm">
+        <HelpTOCNode Title="ActiveOptions Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.ActiveOptions.htm" />
+        <HelpTOCNode Title="FilterText Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.FilterText.htm" />
+        <HelpTOCNode Title="IsExpanded Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.IsExpanded.htm" />
+        <HelpTOCNode Title="PrintQueues Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.PrintQueues.htm" />
+        <HelpTOCNode Title="Root Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.Root.htm" />
+        <HelpTOCNode Title="SelectedNode Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedNode.htm" />
+        <HelpTOCNode Title="SelectedPosition Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPosition.htm" />
+        <HelpTOCNode Title="SelectedPrintQueue Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedPrintQueue.htm" />
+        <HelpTOCNode Title="SelectedValue Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.SelectedValue.htm" />
+        <HelpTOCNode Title="TicketFlowDocument Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketFlowDocument.htm" />
+        <HelpTOCNode Title="TicketXml Property " Url="html/P-PrinterCapsViewer.ApplicationMain.MainViewModel.TicketXml.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MainViewModel Events" Url="html/Events.T-PrinterCapsViewer.ApplicationMain.MainViewModel.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="182bb1a1-6c29-4367-a49c-965701971d96" Title="PrinterCapsViewer.Shared.Behaviors Namespace" Url="html/N-PrinterCapsViewer.Shared.Behaviors.htm">
+    <HelpTOCNode Id="0a35c1b2-b917-4788-9aaf-cb29b22c62d5" Title="RichTextBoxBindingHelper Class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm">
+      <HelpTOCNode Title="RichTextBoxBindingHelper Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm" />
+      <HelpTOCNode Id="25c09478-294a-4aa1-9849-18e96cfc28d3" Title="RichTextBoxBindingHelper Fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm">
+        <HelpTOCNode Title="BindableDocumentProperty Field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.BindableDocumentProperty.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9d87e1c4-f1ae-402b-b6e8-aec11d7bc415" Title="RichTextBoxBindingHelper Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.htm">
+        <HelpTOCNode Title="GetBindableDocument Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.GetBindableDocument.htm" />
+        <HelpTOCNode Title="SetBindableDocument Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxBindingHelper.SetBindableDocument.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f9a07121-6602-470a-be6e-adf0a1a0ba73" Title="RichTextBoxScrollBehavior Class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm">
+      <HelpTOCNode Title="RichTextBoxScrollBehavior Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm" />
+      <HelpTOCNode Id="39460794-68e8-4b0f-9d73-97cd5ab780b8" Title="RichTextBoxScrollBehavior Fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm">
+        <HelpTOCNode Title="VerticalOffsetProperty Field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.VerticalOffsetProperty.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="86415de6-565e-46f2-a26a-9710d0de2a8d" Title="RichTextBoxScrollBehavior Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.htm">
+        <HelpTOCNode Title="GetVerticalOffset Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.GetVerticalOffset.htm" />
+        <HelpTOCNode Title="SetVerticalOffset Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxScrollBehavior.SetVerticalOffset.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f81f35a8-0b11-4da8-8358-84ed71364430" Title="RichTextBoxSelectionBehavior Class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm">
+      <HelpTOCNode Title="RichTextBoxSelectionBehavior Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm" />
+      <HelpTOCNode Id="34547227-a729-4b58-bcdd-899a547b72de" Title="RichTextBoxSelectionBehavior Fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm">
+        <HelpTOCNode Title="SelectionPositionProperty Field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SelectionPositionProperty.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="a6ab464e-2859-4cc5-af5c-63c37d312c4e" Title="RichTextBoxSelectionBehavior Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.htm">
+        <HelpTOCNode Title="GetSelectionPosition Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.GetSelectionPosition.htm" />
+        <HelpTOCNode Title="SetSelectionPosition Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.RichTextBoxSelectionBehavior.SetSelectionPosition.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="375f367c-0324-4183-b0e3-7fea453adec7" Title="TreeViewSelectedItemBehavior Class" Url="html/T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm">
+      <HelpTOCNode Title="TreeViewSelectedItemBehavior Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm" />
+      <HelpTOCNode Id="b0abbce2-628d-466c-8312-3cb3fffe9f30" Title="TreeViewSelectedItemBehavior Fields" Url="html/Fields.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm">
+        <HelpTOCNode Title="SelectedItemProperty Field" Url="html/F-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SelectedItemProperty.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="7131861a-1bd9-48b6-9267-42ae0b96e7c5" Title="TreeViewSelectedItemBehavior Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.htm">
+        <HelpTOCNode Title="GetSelectedItem Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.GetSelectedItem.htm" />
+        <HelpTOCNode Title="SetSelectedItem Method " Url="html/M-PrinterCapsViewer.Shared.Behaviors.TreeViewSelectedItemBehavior.SetSelectedItem.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="576e3f44-1c52-41a5-8abc-e6865dbeb11f" Title="PrinterCapsViewer.Shared.Converters Namespace" Url="html/N-PrinterCapsViewer.Shared.Converters.htm">
+    <HelpTOCNode Id="8e6d8131-3144-42d3-9c7b-90cbe9cd8abc" Title="BoolToVisibilityConverter Class" Url="html/T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm">
+      <HelpTOCNode Title="BoolToVisibilityConverter Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm" />
+      <HelpTOCNode Id="dd378a80-fc60-4af8-b641-96121d190124" Title="BoolToVisibilityConverter Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.Convert.htm" />
+        <HelpTOCNode Title="ConvertBack Method " Url="html/M-PrinterCapsViewer.Shared.Converters.BoolToVisibilityConverter.ConvertBack.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="02527180-9052-4842-bd16-9191fb67cfa1" Title="HighlightTextConverter Class" Url="html/T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm">
+      <HelpTOCNode Title="HighlightTextConverter Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm" />
+      <HelpTOCNode Id="74055e6c-f41c-4aad-8c30-45213d6d1b44" Title="HighlightTextConverter Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.Convert.htm" />
+        <HelpTOCNode Title="ConvertBack Method " Url="html/M-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.ConvertBack.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3d44daef-243e-4ca3-aa67-48039df9ed06" Title="HighlightTextConverter Properties" Url="html/Properties.T-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.htm">
+        <HelpTOCNode Title="HighlightBackground Property " Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightBackground.htm" />
+        <HelpTOCNode Title="HighlightWeight Property " Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.HighlightWeight.htm" />
+        <HelpTOCNode Title="NormalForeground Property " Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalForeground.htm" />
+        <HelpTOCNode Title="NormalWeight Property " Url="html/P-PrinterCapsViewer.Shared.Converters.HighlightTextConverter.NormalWeight.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="30c34876-7d28-404d-877b-26130fbad779" Title="InverseBoolToVisibilityConverter Class" Url="html/T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm">
+      <HelpTOCNode Title="InverseBoolToVisibilityConverter Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm" />
+      <HelpTOCNode Id="66a5d397-897e-4b16-a831-64fd91f96518" Title="InverseBoolToVisibilityConverter Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.htm">
+        <HelpTOCNode Title="Convert Method " Url="html/M-PrinterCapsViewer.Shared.Converters.InverseBoolToVisibilityConverter.Convert.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c077863d-7211-49ae-8d32-d3d9f67ab217" Title="PrinterCapsViewer.Shared.FlowDoc Namespace" Url="html/N-PrinterCapsViewer.Shared.FlowDoc.htm">
+    <HelpTOCNode Id="cbff6ca3-8bdb-4a2d-9cbe-1e5527d9e226" Title="FlowDocHelper Class" Url="html/T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm">
+      <HelpTOCNode Title="FlowDocHelper Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm" />
+      <HelpTOCNode Id="d3afc327-3a1e-43b1-ba8c-36336107d0ac" Title="FlowDocHelper Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm">
+        <HelpTOCNode Title="Build Method " Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.Build.htm" />
+        <HelpTOCNode Title="BuildHighlightedTicketDocument Method " Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.BuildHighlightedTicketDocument.htm" />
+        <HelpTOCNode Title="WithActiveOptions Method " Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithActiveOptions.htm" />
+        <HelpTOCNode Title="WithFontFamily Method " Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontFamily.htm" />
+        <HelpTOCNode Title="WithFontSize Method " Url="html/M-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.WithFontSize.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0e856418-cc81-4805-bb5b-368415f33794" Title="FlowDocHelper Properties" Url="html/Properties.T-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.htm">
+        <HelpTOCNode Title="XmlOptionIndex Property " Url="html/P-PrinterCapsViewer.Shared.FlowDoc.FlowDocHelper.XmlOptionIndex.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="eecca041-e41c-4d78-b518-8764621c3dbe" Title="PrinterCapsViewer.Shared.PrinterCapability Namespace" Url="html/N-PrinterCapsViewer.Shared.PrinterCapability.htm">
+    <HelpTOCNode Id="5198447b-16e4-4fc0-8b83-e9d0bc52a952" Title="CapabilityNode Class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm">
+      <HelpTOCNode Title="CapabilityNode Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+      <HelpTOCNode Title="CapabilityNode Constructor " Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.-ctor.htm" />
+      <HelpTOCNode Title="CapabilityNode Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+      <HelpTOCNode Id="ddedc698-d2df-4b2e-8cdd-2ce981e9aa5f" Title="CapabilityNode Properties" Url="html/Properties.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm">
+        <HelpTOCNode Title="Children Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Children.htm" />
+        <HelpTOCNode Title="DisplayValue Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.DisplayValue.htm" />
+        <HelpTOCNode Title="IsExpanded Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsExpanded.htm" />
+        <HelpTOCNode Title="IsIncompatible Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsIncompatible.htm" />
+        <HelpTOCNode Title="IsInTicket Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsInTicket.htm" />
+        <HelpTOCNode Title="IsSupported Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.IsSupported.htm" />
+        <HelpTOCNode Title="MatchesFilter Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.MatchesFilter.htm" />
+        <HelpTOCNode Title="Name Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Name.htm" />
+        <HelpTOCNode Title="Type Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Type.htm" />
+        <HelpTOCNode Title="Value Property " Url="html/P-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.Value.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="CapabilityNode Events" Url="html/Events.T-PrinterCapsViewer.Shared.PrinterCapability.CapabilityNode.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b78c3c19-a4df-4113-8b96-955f49bba664" Title="PrinterCapabilityHelpers Class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm">
+      <HelpTOCNode Title="PrinterCapabilityHelpers Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm" />
+      <HelpTOCNode Id="2acef879-33fe-446a-9057-10fb1cf203b6" Title="PrinterCapabilityHelpers Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.htm">
+        <HelpTOCNode Title="BuildNode Method " Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.BuildNode.htm" />
+        <HelpTOCNode Title="CompareWithTicket Method " Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.CompareWithTicket.htm" />
+        <HelpTOCNode Title="GetCapabilityOptionName Method " Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrinterCapabilityHelpers.GetCapabilityOptionName.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7922a380-91d2-4f0c-b464-90f419108675" Title="PrintTicketCapabilityMapper Class" Url="html/T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm">
+      <HelpTOCNode Title="PrintTicketCapabilityMapper Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm" />
+      <HelpTOCNode Id="fa75d295-293f-46c8-bfd8-181690e7a776" Title="PrintTicketCapabilityMapper Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.htm">
+        <HelpTOCNode Title="IsActiveInTicket Method " Url="html/M-PrinterCapsViewer.Shared.PrinterCapability.PrintTicketCapabilityMapper.IsActiveInTicket.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="3eafc8ae-0a12-4eaf-951c-ed295d0a22fb" Title="PrinterCapsViewer.Shared.PrintTicketHelper Namespace" Url="html/N-PrinterCapsViewer.Shared.PrintTicketHelper.htm">
+    <HelpTOCNode Id="30a5afff-91ed-4fc8-a322-67c1f70e7dab" Title="PrintTicketXmlHelper Class" Url="html/T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm">
+      <HelpTOCNode Title="PrintTicketXmlHelper Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm" />
+      <HelpTOCNode Id="70fdab84-de41-4ef3-9867-32c677255da5" Title="PrintTicketXmlHelper Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.htm">
+        <HelpTOCNode Title="CleanPrintTicketXml Method " Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.CleanPrintTicketXml.htm" />
+        <HelpTOCNode Title="ExtractActiveOptions Method " Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.ExtractActiveOptions.htm" />
+        <HelpTOCNode Title="PrintTicketToXml Method " Url="html/M-PrinterCapsViewer.Shared.PrintTicketHelper.PrintTicketXmlHelper.PrintTicketToXml.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="8df838be-3be0-4c29-9e48-31cc2da3ae8f" Title="PrinterCapsViewer.Shared.TreeViewHelper Namespace" Url="html/N-PrinterCapsViewer.Shared.TreeViewHelper.htm">
+    <HelpTOCNode Id="9fcb915c-e8bd-43b7-959e-351aac07cc56" Title="InlineCollectionDummy Class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm">
+      <HelpTOCNode Title="InlineCollectionDummy Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+      <HelpTOCNode Title="InlineCollectionDummy Properties" Url="html/Properties.T-PrinterCapsViewer.Shared.TreeViewHelper.InlineCollectionDummy.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7baad08d-9c27-49b0-a9e7-10dcf75f6057" Title="TextBlockHighlight Class" Url="html/T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm">
+      <HelpTOCNode Title="TextBlockHighlight Members" Url="html/AllMembers.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm" />
+      <HelpTOCNode Id="fae21aeb-d0d8-4db7-b2a9-6d58a59f4c5a" Title="TextBlockHighlight Fields" Url="html/Fields.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm">
+        <HelpTOCNode Title="InlinesProperty Field" Url="html/F-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.InlinesProperty.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9102653f-0e7c-4fb0-89bd-234ed7bf1e8e" Title="TextBlockHighlight Methods" Url="html/Methods.T-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.htm">
+        <HelpTOCNode Title="GetInlines Method " Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.GetInlines.htm" />
+        <HelpTOCNode Title="SetInlines Method " Url="html/M-PrinterCapsViewer.Shared.TreeViewHelper.TextBlockHighlight.SetInlines.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -1,0 +1,101 @@
+<!-- 
+=====================================================================
+<copyright file="CapabilityTemplates.xaml" company="GFEAP GmbH">
+Copyright (c) GFEAP GmbH, Bensheim, Germany. All rights reserved.
+Author: Michael Friedl
+Licensed under the MIT License. See LICENSE file in the project root
+for full license information.
+Project: PrinterCapsViewer
+</copyright>
+=====================================================================
+-->
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PrinterCapsViewer.Shared.PrinterCapability"
+    xmlns:conv="clr-namespace:PrinterCapsViewer.Shared.Converters"
+    xmlns:tv="clr-namespace:PrinterCapsViewer.Shared.TreeViewHelper"
+    xmlns:cap="clr-namespace:PrinterCapsViewer.Shared.PrinterCapability">
+
+    <!-- Converter -->
+    <conv:BoolToVisibilityConverter
+        x:Key="BoolToVisibilityConverter"/>
+
+    <conv:InverseBoolToVisibilityConverter
+        x:Key="InverseBoolToVisibilityConverter"/>
+
+    <conv:HighlightTextConverter
+        x:Key="HighlightTextConverter"
+        HighlightBackground="LightGoldenrodYellow"
+        NormalForeground="Black"
+        NormalWeight="SemiBold"
+        HighlightWeight="Bold"/>
+
+    <!-- TreeView Template -->
+    <HierarchicalDataTemplate
+        DataType="{x:Type cap:CapabilityNode}"
+        ItemsSource="{Binding Children}">
+
+        <StackPanel Orientation="Horizontal"
+                    Visibility="{Binding MatchesFilter,
+                        Converter={StaticResource BoolToVisibilityConverter}}">
+
+            <StackPanel.Style>
+                <Style TargetType="StackPanel">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsSupported}"
+                                     Value="False">
+                            <Setter Property="Background"
+                                    Value="#30FF0000"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </StackPanel.Style>
+
+            <!-- Feste Icon-Spalte: Haken + Warnsymbol übereinander/nebeneinander mit fixer Breite -->
+            <Grid Width="36" Margin="0,0,2,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="18"/>
+                    <ColumnDefinition Width="18"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0"
+                           Text="✔"
+                           Foreground="Green"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Visibility="{Binding IsInTicket,
+                               Converter={StaticResource BoolToVisibilityConverter},
+                               ConverterParameter={x:Static Visibility.Hidden}}"/>
+
+                <TextBlock Grid.Column="1"
+                           Text="⚠"
+                           Foreground="Red"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Center"
+                           Visibility="{Binding IsSupported,
+                               Converter={StaticResource InverseBoolToVisibilityConverter},
+                               ConverterParameter={x:Static Visibility.Hidden}}"/>
+            </Grid>
+
+            <!-- Name mit Highlight -->
+            <TextBlock>
+                <tv:TextBlockHighlight.Inlines>
+                    <MultiBinding Converter="{StaticResource HighlightTextConverter}">
+                        <Binding Path="Name"/>
+                        <Binding Path="DataContext.FilterText"
+                                 RelativeSource="{RelativeSource AncestorType=Window}"/>
+                    </MultiBinding>
+                </tv:TextBlockHighlight.Inlines>
+            </TextBlock>
+
+            <!-- Typ -->
+            <TextBlock Text=" : "
+                       Margin="6,0,2,0"/>
+
+            <TextBlock Text="{Binding Type}"
+                       Foreground="Gray"/>
+        </StackPanel>
+    </HierarchicalDataTemplate>
+</ResourceDictionary>

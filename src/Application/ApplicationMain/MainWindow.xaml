@@ -1,0 +1,125 @@
+<!--
+======================================================================
+<copyright file="MainWindow.xaml" company="GFEAP GmbH">
+Copyright (c) GFEAP GmbH, Bensheim, Germany. All rights reserved.
+Author: Michael Friedl
+Licensed under the MIT License. See LICENSE file in the project root
+for full license information.
+Project: PrinterCapsViewer
+</copyright>
+======================================================================
+-->
+<Window x:Class="PrinterCapsViewer.Application.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PrintCapabilities Debug Viewer"
+        Height="600"
+        Width="900"
+        xmlns:behaviors="clr-namespace:PrinterCapsViewer.Shared.Behaviors">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" MinWidth="250"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*" MinWidth="200"/>
+            <ColumnDefinition Width="3*" MinWidth="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Printer -->
+        <StackPanel Grid.Row="0"
+                    Orientation="Horizontal"
+                    Margin="6">
+            <TextBlock Name="PrinterLabel"
+                       Text="Printer:"
+                       Width="50"
+                       VerticalAlignment="Center"
+                       Height="30"
+                       Margin="0,0,6,0"/>
+            <ComboBox Width="250"
+                      Height="30"
+                      ItemsSource="{Binding PrintQueues}"
+                      SelectedItem="{Binding SelectedPrintQueue}"
+                      DisplayMemberPath="Name"/>
+        </StackPanel>
+
+        <!-- Filter -->
+        <StackPanel Grid.Row="1"
+                    Grid.ColumnSpan="3"
+                    Orientation="Horizontal"
+                    Margin="5">
+            <TextBlock Text="Filter:"
+                       Width="{Binding Width,ElementName=PrinterLabel}"
+                       VerticalAlignment="Center"
+                       Margin="0,0,5,0"/>
+            <TextBox Width="250"
+                     Height="30"
+                     Text="{Binding FilterText, UpdateSourceTrigger=PropertyChanged}"
+                     ToolTip="Filtert Name &amp; Typ (live)"/>
+        </StackPanel>
+
+        <!-- TreeView -->
+        <TreeView Grid.Row="2"
+                  ItemsSource="{Binding Root.Children}"
+                  behaviors:TreeViewSelectedItemBehavior.SelectedItem="{Binding SelectedNode, Mode=TwoWay}">
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded"
+                            Value="{Binding IsExpanded, Mode=TwoWay}"/>
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+
+        <!-- Splitter -->
+        <GridSplitter Grid.Row="2"
+                      Grid.Column="1"
+                      Width="5"
+                      HorizontalAlignment="Stretch"/>
+
+        <!-- Details -->
+        <StackPanel Grid.Column="2"
+                    Grid.RowSpan="3"
+                    Margin="8">
+            <TextBlock Text="Details"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       Margin="0,0,0,8"/>
+
+            <TextBlock Text="Name:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding SelectedNode.Name}"
+                       Margin="0,0,0,6"/>
+
+            <TextBlock Text="Typ:" FontWeight="Bold"/>
+            <TextBlock Text="{Binding SelectedNode.Type}"
+                       Margin="0,0,0,6"/>
+
+            <TextBlock Text="Wert:" FontWeight="Bold"/>
+            <TextBox Text="{Binding SelectedNode.DisplayValue, Mode=OneWay}"
+                     IsReadOnly="True"
+                     TextWrapping="Wrap"
+                     VerticalScrollBarVisibility="Auto"
+                     Height="300"/>
+        </StackPanel>
+        <TextBlock  Grid.Row="0"
+                    Grid.Column="3"
+                    Text="PrintTicket: Raw Data"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    Margin="0,0,0,8"/>
+
+        <RichTextBox x:Name="TicketRichTextBox" 
+                     Grid.Row="1"
+                     Grid.Column="3"
+                     Grid.RowSpan="2"
+                     IsReadOnly="True"   
+                     behaviors:RichTextBoxSelectionBehavior.SelectionPosition="{Binding SelectedPosition}"
+                     behaviors:RichTextBoxBindingHelper.BindableDocument="{Binding TicketFlowDocument}"
+                     VerticalScrollBarVisibility="Auto"
+                     />
+      
+    </Grid>
+</Window>
